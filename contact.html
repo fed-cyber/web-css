@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fed's Bakery | Contact & Orders</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1><i class="fas fa-bread-slice"></i> Fed's Bakery</h1>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Our Products</a></li>
+                    <li><a href="contact.html" class="active">Contact & Orders</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header contact-header">
+        <div class="container">
+            <h1>We'd Love To Hear From You</h1>
+            <p>Place custom orders, ask questions, or provide feedback</p>
+        </div>
+    </section>
+
+    <div class="contact-container">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-form">
+                    <h2>Place an Order or Send Message</h2>
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required placeholder="Your first name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required placeholder="Your last name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="(555) 123-4567">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="you@example.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Order Type</label>
+                            <div class="radio-group">
+                                <label>
+                                    <input type="radio" name="orderType" value="pickup" checked>
+                                    Store Pickup
+                                </label>
+                                <label>
+                                    <input type="radio" name="orderType" value="delivery">
+                                    Local Delivery
+                                </label>
+                                <label>
+                                    <input type="radio" name="orderType" value="catering">
+                                    Catering Event
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="date">Preferred Date *</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="productType">Product Category</label>
+                            <select id="productType" name="productType">
+                                <option value="">Select a category</option>
+                                <option value="bread">Breads</option>
+                                <option value="pastry">Pastries</option>
+                                <option value="cake">Cakes</option>
+                                <option value="cookie">Cookies</option>
+                                <option value="catering">Full Catering</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Special Requirements (check all that apply)</label>
+                            <div class="checkbox-group">
+                                <label>
+                                    <input type="checkbox" name="requirements" value="glutenFree">
+                                    Gluten Free Options
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="requirements" value="vegan">
+                                    Vegan Options
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="requirements" value="nutFree">
+                                    Nut Free
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="requirements" value="dairyFree">
+                                    Dairy Free
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Order Details / Special Instructions *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Please describe your order, including quantities, flavors, and any special requests..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn submit-btn">Submit Order Request</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <div class="info-card">
+                        <h3><i class="fas fa-map-marker-alt"></i> Visit Us</h3>
+                        <p>123 Baker Street<br>Pastry Town, PT 12345</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3><i class="fas fa-phone"></i> Call Us</h3>
+                        <p>Main: (555) 123-BAKE (2253)<br>Catering: (555) 123-CAKE (2253)</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3><i class="fas fa-envelope"></i> Email Us</h3>
+                        <p>Orders: orders@fedsbakery.com<br>General: info@fedsbakery.com</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3><i class="fas fa-clock"></i> Hours</h3>
+                        <p><strong>Monday - Friday:</strong> 7:00 AM - 7:00 PM<br>
+                           <strong>Saturday:</strong> 7:00 AM - 6:00 PM<br>
+                           <strong>Sunday:</strong> 8:00 AM - 4:00 PM</p>
+                    </div>
+                    
+                    <div class="map-placeholder">
+                        <h3>Our Location</h3>
+                        <div class="map">
+                            <p><i class="fas fa-map"></i> Map would be embedded here</p>
+                            <p>123 Baker Street, Pastry Town</p>
+                        </div>
+                    </div>
+                    
+                    <div class="emergency-order">
+                        <h3><i class="fas fa-exclamation-circle"></i> Need it Today?</h3>
+                        <p>For same-day orders, please call us directly. We'll do our best to accommodate!</p>
+                        <a href="tel:5551232253" class="btn call-btn">
+                            <i class="fas fa-phone"></i> Call Now: (555) 123-BAKE
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How far in advance should I order?</h3>
+                    <p>For regular orders: 24 hours. For wedding cakes or large catering: 2 weeks minimum.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you deliver?</h3>
+                    <p>Yes! We deliver within a 10-mile radius. Delivery fee starts at $5.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What are your payment options?</h3>
+                    <p>We accept cash, credit cards, and digital payments. Catering requires 50% deposit.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you offer gluten-free options?</h3>
+                    <p>Yes! We have a selection of gluten-free baked goods. Please note we're not a gluten-free facility.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Fed's Bakery</h3>
+                    <p>Making your special moments sweeter since 2003</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Contact</h3>
+                    <p><i class="fas fa-phone"></i> (555) 123-BAKE</p>
+                    <p><i class="fas fa-envelope"></i> info@fedsbakery.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Our Journey</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p>&copy; 2023 Fed's Bakery. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
